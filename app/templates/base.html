@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca - {% block title%} {% endblock%}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ 
+    <nav id="nav-bar">
+        <div class="nav-wrapper">
+          <a href="{{ url_for('index') }}" class="brand-logo">Bibioteca</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            
+            <li><a href="badges.html">Busqueda</a></li>
+        <li><a href="{{ url_for('register') }}">Registrarse</a></li>
+          </ul>
+        </div>
+      </nav>
+            
+</head>
+<body>
+    
+    {% block content %}
+
+    {% endblock %} 
+
+</body>
+</html>
