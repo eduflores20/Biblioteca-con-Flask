@@ -5,25 +5,31 @@
 {% endblock %}
 
 {% block content %}
+<div class="box">
+
+  <h5>Bienvenido a la Biblioteca Nueva Era</h5>
+  <h6>Complete el siguiente formulario para iniciar sesión</h6>
+
   <form method="post">
     <div class="row">
-      <form method="post" class="col s6">
+      <form method="post" class="col s12">
         <div class="row">
           <div class="input-field col s6">
-            <label for="username">Username</label>
-            <input name="username" id="username" required>
+            <input id="username" type="text" class="validate" name="username" required>
+            <label for="first_name">Nombre de Usuario</label>
           </div>
-          
-    
-        <div class="row">
-         <div class="input-field col s6">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
-          </div>
-        </div> 
+
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="password" type="password" class="validate" name="password" required>
+              <label for="password">Contraseña</label>
+            </div>
+
         </div>
         <a class="waves-effect waves-light btn"><input type="submit" value="Log In"></a>
       </form>
     </div>
   </form>
+</div>
 {% endblock %}

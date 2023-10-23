@@ -41,6 +41,6 @@ def create_app(test_config = None):
     
     @app.route('/auth/register')
     def register():
-        return render_template('/auth/index.html')
+        return render_template('auth/index.html')
     
     return app
