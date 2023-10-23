@@ -3,5 +3,13 @@
 {% block title %} Registrarse {% endblock %}
 
 {% block content%}
-<h1 id="title">Estoy funcionando soy el inicio</h1>
+
+    {% if g.user %}
+        <h3><span>Bienvenido {{g.user['username']}} </span></h3>
+        <h1 id="title">Estoy funcionando soy el inicio</h1>
+    {% else %}
+        <h2>Usted no esta registrado</h2>
+        <h1>Si quiere iniciar sesión <a href="{{ url_for('auth.login') }}">Click aquí</a></h1>
+    {% endif%}
+
 {% endblock %}
