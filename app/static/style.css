@@ -1,9 +1,9 @@
 html {
-    background-color: #3d63ae;
+    background-color: #e8f2e8;
 }
 
 #nav-bar {
-    background-color: #4a7ac6;
+    background-color: #4ade4a;
 }
 
 #title {
@@ -34,4 +34,10 @@ h5, h6{
     background-attachment: fixed;
 
     
+}
+
+.input-field {
+    border-bottom: 1px solid #585585;
+    box-shadow: 0 1px 0 0 #0d0abe
+    ;
 }

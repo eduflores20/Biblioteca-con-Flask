@@ -43,4 +43,8 @@ def create_app(test_config = None):
     def register():
         return render_template('auth/index.html')
     
+    @app.route("/vistas/noticia")
+    def noticias():
+        return render_template('vistas/noticias.html')
+    
     return app
